@@ -1,13 +1,13 @@
-name: PR Verify
+name: CI Workflow
 
 on:
-  pull_request:
+  push:
     branches: ["main"]
   workflow_dispatch:
 
 jobs:
   build:
-    name: PR Verify
+    name: CI Workflow
     runs-on: ubuntu-22.04
 
     steps:
